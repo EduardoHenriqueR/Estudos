@@ -1,0 +1,34 @@
+###
+POST http://localhost:5168/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "funcionarioCpf" : "12345678912",
+    "salarioBruto" : 2500,
+    "valeTrans" : 120,
+    "valeRefeicao" : 20,
+    "diasTrabalhados" : 10,
+    "dia" : 20,
+    "mes" : 6,
+    "ano" : 2025
+}
+
+###
+GET http://localhost:5168/api/folha/listar
+
+###
+GET http://localhost:5168/api/folha/buscar/12345678912/6/2025
+
+###
+DELETE http://localhost:5168/api/folha/deletar/3
+
+###
+PUT http://localhost:5168/api/folha/editar/12345678912/7/2024
+Content-Type: application/json
+
+{
+    "salarioBruto" : 3500,
+    "valeTrans" : 120,
+    "valeRefeicao" : 20,
+    "diasTrabalhados" : 10
+}

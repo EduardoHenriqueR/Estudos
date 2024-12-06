@@ -1,0 +1,20 @@
+###
+POST http://localhost:5168/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "cpf" : "12345678988",
+    "nome" : "Douglas"
+}
+
+###
+GET http://localhost:5168/api/funcionario/listar
+
+###
+PUT http://localhost:5168/api/funcionario/editar/00000000001
+Content-Type: application/json
+
+{
+    "cpf" : "22000000001",
+    "nome" : "Editados"
+}
