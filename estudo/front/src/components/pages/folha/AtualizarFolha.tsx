@@ -39,7 +39,7 @@ function AtualizarFolha() {
       axios
         .put(`http://localhost:5168/api/folha/editar/${cpf}/${mes}/${ano}`, folha)
         .then(() => {
-          navigate("/folhas"); // Redireciona para a lista de folhas
+          navigate("/pages/folha/listar"); // Redireciona para a lista de folhas
         })
         .catch(() => setErro("Erro ao atualizar a folha."));
     }

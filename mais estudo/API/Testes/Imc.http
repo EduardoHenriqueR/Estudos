@@ -1,0 +1,24 @@
+###
+POST http://localhost:5128/api/imc/cadastrar
+Content-Type: application/json
+
+{
+    "pessoaCpf" : "12345678914",
+    "peso" : 95.0,
+    "altura" : 1.71,
+    "status" : ""
+}
+
+###
+GET http://localhost:5128/api/imc/listar
+
+###
+PUT http://localhost:5128/api/imc/editar
+Content-Type: application/json
+
+{
+    "id" : 7,
+    "peso" : 38,
+    "altura" : 1.41,
+    "status" : ""
+}

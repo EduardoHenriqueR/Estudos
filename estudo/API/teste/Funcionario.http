@@ -3,7 +3,7 @@ POST http://localhost:5168/api/funcionario/cadastrar
 Content-Type: application/json
 
 {
-    "cpf" : "12345678988",
+    "cpf" : "12121212121",
     "nome" : "Douglas"
 }
 

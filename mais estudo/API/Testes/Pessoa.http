@@ -1,0 +1,13 @@
+###
+POST http://localhost:5128/api/pessoa/cadastrar
+Content-Type: application/json
+
+{
+    "cpf" : "12345678911",
+    "nome" : "Dio",
+    "sexo" : "Feminino",
+    "idade" : 18
+}
+
+###
+GET http://localhost:5128/api/pessoa/listar
